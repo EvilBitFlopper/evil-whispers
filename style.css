@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  background: #f4ecdf;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #2b1d0e;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #fffaf2;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 18px rgba(80, 50, 10, 0.15);
+}
+
+h1 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0 0 1.5rem;
+  color: #7a3e0c;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+  color: #7a3e0c;
+}
+
+.temp-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e7d7bd;
+  margin-bottom: 1.5rem;
+}
+
+.button-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.button-row button {
+  min-width: 3.2rem;
+  padding: 0.5rem 0.4rem;
+  border: none;
+  border-radius: 8px;
+  background: #e8a33d;
+  color: #3a2200;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.button-row button:hover {
+  background: #d8912a;
+}
+
+.temp-display {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.temp-display input {
+  width: 7rem;
+  font-size: 2.2rem;
+  text-align: right;
+  border: none;
+  border-bottom: 2px solid #d8912a;
+  background: transparent;
+  color: #2b1d0e;
+  padding: 0.1rem 0;
+}
+
+.temp-display input:focus {
+  outline: none;
+  border-bottom-color: #7a3e0c;
+}
+
+.unit {
+  font-size: 1.5rem;
+  color: #7a3e0c;
+}
+
+.add-btn {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 10px;
+  background: #7a3e0c;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #602f08;
+}
+
+.entries .empty {
+  color: #8a7a63;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.entries ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.entries li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #f4ecdf;
+  border-radius: 8px;
+}
+
+.entry-time {
+  color: #8a7a63;
+  font-size: 0.85rem;
+}
+
+.entry-temp {
+  font-weight: 600;
+  flex: 1;
+  text-align: right;
+  margin-right: 0.75rem;
+}
+
+.remove-btn {
+  border: none;
+  background: #c94f3f;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #a83d2f;
+}
