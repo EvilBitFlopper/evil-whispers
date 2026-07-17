@@ -10,6 +10,28 @@
   <main class="card">
     <h1>Beer Brewing — Temperature Log</h1>
 
+    <section class="beer-meta">
+      <label class="field">
+        <span class="field-label">Beer name</span>
+        <input type="text" v-model="name" @change="persistMeta()" placeholder="e.g. Amber Ale #1" />
+      </label>
+
+      <label class="field">
+        <span class="field-label">Batch number</span>
+        <input type="text" v-model="batch" @change="persistMeta()" placeholder="e.g. B-2026-03" />
+      </label>
+
+      <label class="field">
+        <span class="field-label">Recipe</span>
+        <textarea v-model="recipe" @change="persistMeta()" rows="4" placeholder="Malts, hops, yeast, quantities…"></textarea>
+      </label>
+
+      <label class="field">
+        <span class="field-label">Brewing note</span>
+        <textarea v-model="note" @change="persistMeta()" rows="3" placeholder="Anything worth remembering about this batch…"></textarea>
+      </label>
+    </section>
+
     <section class="temp-control">
       <div class="button-row">
         <button @click="adjust(-2)">-2.0</button>
@@ -41,6 +63,10 @@
           <button class="remove-btn" @click="removeEntry(entry.id)">Remove</button>
         </li>
       </ul>
+    </section>
+
+    <section class="export">
+      <button class="export-btn" @click="exportBeer()">Export as JSON</button>
     </section>
   </main>
 
