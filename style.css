@@ -36,6 +36,46 @@ h2 {
   color: #7a3e0c;
 }
 
+.beer-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e7d7bd;
+  margin-bottom: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.field-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #7a3e0c;
+}
+
+.field input[type="text"],
+.field textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #2b1d0e;
+  background: #f4ecdf;
+  border: 1px solid #e7d7bd;
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+  resize: vertical;
+}
+
+.field input[type="text"]:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: #d8912a;
+}
+
 .temp-control {
   display: flex;
   flex-direction: column;
@@ -160,4 +200,24 @@ h2 {
 
 .remove-btn:hover {
   background: #a83d2f;
+}
+
+.export {
+  margin-top: 1.5rem;
+}
+
+.export-btn {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 10px;
+  background: #e8a33d;
+  color: #3a2200;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.export-btn:hover {
+  background: #d8912a;
 }
